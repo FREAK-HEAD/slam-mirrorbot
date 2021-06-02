@@ -151,7 +151,7 @@ class MirrorListener(listeners.MirrorListeners):
             msg = f'<b>📁Filename: </b><code>{download_dict[self.uid].name()}</code>\n'\
                   f'\n'\
                   f'<b> TotalSize🤏: </b><code>{size}</code>\n'\
-                  f'✓𝚄𝙿𝙻𝙾𝙰𝙳𝙴𝙳 𝚃𝙾 𝚃𝙴𝙰𝙼𝙳𝚁𝙸𝚅𝙴
+                  f'✓𝚄𝙿𝙻𝙾𝙰𝙳𝙴𝙳 𝚃𝙾 𝚃𝙴𝙰𝙼𝙳𝚁𝙸𝚅𝙴\n'
             buttons = button_build.ButtonMaker()
             if SHORTENER is not None and SHORTENER_API is not None:
                 surl = requests.get('https://{}/api?api={}&url={}&format=text'.format(SHORTENER, SHORTENER_API, link)).text
