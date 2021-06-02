@@ -68,7 +68,7 @@ def start(update, context):
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id, update.message.chat.username, update.message.text))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         if update.message.chat.type == "private" :
-            sendMessage(f"Hey I'm Alive 🙂", context.bot, update)
+            sendMessage(f"Hey I'm 𝐃𝐄𝐀𝐃😶 Just Kidding 𝙸'𝙼 𝙰𝙻𝙸𝚅𝙴😅", context.bot, update)
         else :
             update.effective_message.reply_photo(IMAGE_URL, start_string, parse_mode=ParseMode.MARKDOWN, reply_markup=reply_markup)
     else :
