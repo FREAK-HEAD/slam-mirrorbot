@@ -58,12 +58,12 @@ def stats(update, context):
 @run_async
 def start(update, context):
     start_string = f'''
-This bot can mirror all your links to Google drive!
-Type /{BotCommands.HelpCommand} to get a list of available commands
+<b>Hey {update.message.chat.first_name} This bot can mirror all your links to Google drive!</b>
+<b>For Any Issues Contact Owner :</b> @Reaper_OX
+<b> WELCOME TO 𝑴𝒊𝒓𝒓𝒐𝒓𝑮𝒓𝒐𝒖𝒑
 '''
     buttons = button_build.ButtonMaker()
-    buttons.buildbutton("Repo", "https://github.com/breakdowns/slam-mirrorbot")
-    buttons.buildbutton("Support Group", "https://t.me/SlamMirrorSupport")
+    buttons.buildbutton("OWNER", "https://t.me/Reaper_OX")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     LOGGER.info('UID: {} - UN: {} - MSG: {}'.format(update.message.chat.id, update.message.chat.username, update.message.text))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
